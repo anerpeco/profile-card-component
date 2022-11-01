@@ -1,0 +1,115 @@
+:root {
+    --cyan: hsl(185, 75%, 39%);
+    --very_dark_desaturated_blue: hsl(229, 23%, 23%);
+    --dark_grayish_blue: hsl(227, 10%, 46%);
+    --dark_gray: hsl(0, 0%, 59%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/bg-pattern-top.svg) no-repeat right 53vw bottom 32vh,
+        url(../images/bg-pattern-bottom.svg) no-repeat top 52vh left 44vw;
+    background-color: var(--cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.card {
+    width: 90vw;
+    max-width: 25rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card_img {
+    position: relative;
+    height: 9.3rem;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card_img img {
+    position: relative;
+    display: block;
+    top: 6rem;
+    margin: auto;
+    border-radius: 50%;
+    border: 0.3rem solid white;
+}
+
+.card_details {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.card_details .name {
+    display: flex;
+    justify-content: center;
+}
+
+.card_details h1,
+.card_details .age {
+    font-size: 1.5rem;
+}
+
+.card_details h1 {
+    font-weight: 700;
+    color: var(--very_dark_desaturated_blue);
+}
+
+.card_details .age {
+    color: var(--dark_grayish_blue);
+    padding-left: 0.8rem;
+    font-weight: 400;
+}
+
+.card_details .place {
+    color: var(--dark_grayish_blue);
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.line {
+    height: 1px;
+    background: var(--dark_gray);
+}
+
+dl {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem;
+}
+
+dt {
+    text-align: center;
+    grid-row-start: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--very_dark_desaturated_blue);
+}
+
+dd {
+    grid-row-start: 2;
+    text-align: center;
+    color: var(--dark_grayish_blue);
+    font-weight: 400;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
